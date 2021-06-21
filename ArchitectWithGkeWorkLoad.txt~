@@ -1,0 +1,49 @@
+おもしろいラボ
+Upgrading a GKE Cluster
+Creating GKE Deployments
+Configuring Pod autoscaling and node pools
+
+
+
+(1)kubectl コマンド
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/AGnIR/kubectl-komando
+
+(2)イントロスペクション
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/pP5Lz/intorosupekusiyon
+
+(3)Kubernetes の操作
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/exam/WoGsv/kubernetes-nocao-zuo
+
+(4)Deployment
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/KjxW4/deployment
+
+(5)Deployment のアップデート
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/NDH8T/deployment-noatupudeto
+
+(6)Job
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/exam/rlYhS/job?redirectToCover=true
+
+(7)クラスタのスケーリング
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/xKNFj/kurasutanosukeringu
+
+(8)Pod の配置の制御
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/cRXLf/pod-nopei-zhi-nozhi-yu
+
+(9)Deployment、Job、スケーリング
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/exam/rxCwD/deployment-job-sukeringu
+
+(10)Pod のネットワーキング
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/CuK6z/pod-nonetutowakingu
+
+(11)Service
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/dnbd8/service
+
+(11)Service のタイプ
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/HPA56/service-notaipu
+
+(12)Ingress
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/quiz/0uSsW/ingress
+
+(13)ネットワーク セキュリティ
+https://www.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke-jp/exam/cq3aX/netutowaku-sekiyuritei
+

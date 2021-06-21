@@ -1,0 +1,132 @@
+------------------------------------------------------------------------------
+2021/06/21 ’ÃÓ’ÅÄ
+’¢£Getting Started with Application Development(2’½µ’ÌÜ)
+
+
+
+
+
+
+
+demo’¤Ï’¸«’¤ë’¤À’¤±’¤¸’¤ã’¤Ê’¤¯’¼«’Ê¬’¤Ç’¤ä’¤Ã’¤Æ’¤ß’¤ë’É¬’Í×’¤¬’¤¢’¤ë’¡£
+storeage, service’¤Î’À­’¼Á’¤ò’¼«’Ê¬’¤Ê’¤ê’¤Ë’¥Î’¡¼’¥È’¤Ë’¤Þ’¤È’¤á’¤ë’¡£
+
+’¥Þ’¥Í’¡¼’¥¸’¥É’¥¤’¥ó’¥¹’¥¿’¥ó’¥¹’¥°’¥ë’¡¼’¥×’¡ÊMIG’¡Ë’¤Ã’¤Æ’¤Ê’¤Ë’¡©
+Maximum surge ’¤È’¤«’¡¡Maximum unavailable ’¤Î’°Õ’Ì£’¤ò’ÇÄ’°®’¤¹’¤ë
+
+challeng lab’¤Ç’¤ä’¤Ã’¤¿’¤³’¤È
+(1) ’¥³’¥ó’¥Æ’¥Ê’²½’¤µ’¤ì’¤¿’¥¢’¥×’¥ê’¥±’¡¼’¥·’¥ç’¥ó’¤Î’¹¹’¿·
+   44  export PROJECT=$(gcloud info --format='value(config.project)')
+   45  echo $PROJECT
+   46  gcloud info --format='value(config.project)')
+   47  gcloud info --format='value(config.project)'
+   48  gcloud info
+   49  gsutil cp gs://${PROJECT}/echo-web-v2.tar.gz .
+   50  ls -al
+   51  tar xvzf echo-web-v2.tar.gz
+   52  ls -al
+   53  rm echo-web-v2.tar.gz
+   54  ls -al
+   55  docker build -t echo-app:v2 .
+   56  ls -al
+   57  docker tag echo-app:v2 gcr.io/$PROJECT/echo-app:v2
+   58  docker push gcr.io/$PROJECT/echo-app:v2
+   59  kubectl edit deployment echo-web
+   60  kubectl get pods
+   61  kubectl get pods -o wide
+   62  kubectl edit deployment echo-web
+
+
+(2)
+’µ¯’Æ°’¥¹’¥¯’¥ê’¥×’¥È’¤Î’¥­’¡¼’Ì¾’¤Ï’·è’¤Þ’¤Ã’¤Æ’¤¤’¤ë’¡Ê’Å¬’Åö’¤¸’¤ã’¥À’¥á’¡Ë
+startup-secipt
+startup-script-url: cloud-strage’¤Ë’³Ê’Ç¼’¤µ’¤ì’¤Æ’¤¤’¤ë’µ¯’Æ°’¥¹’¥¯’¥ê’¥×’¥È’¤ÎURL
+
+
+
+[Application Deployment, Debug, Performance’¥³’¡¼’¥¹]
+
+Qwiklabs - Configuring Persistent Storage for GKE
+’¥³’¥ó’¥Æ’¥Ê’¤Î’¥Ó’¥ë’¥É
+docker build -t my-web-server . (’ºÇ’¸å’¤Î . ’¤Ï Dockerfile ’¤¬ .’¤Ë’¤¢’¤ë’¤³’¤È’¤ò’¼¨’¤·’¤Æ’¤¤’¤ë)
+’¥¤’¥á’¡¼’¥¸’¤Î’³Î’Ç§
+docker images
+
+docker run -d -p 8080:8080 my-web-server
+
+docker ps ’¤Ç’¼Â’¹Ô’¾õ’¶·’³Î’Ç§
+
+docker stop (container id) ’¤Ç ’¼Â’¹Ô’Ää’»ß
+
+’¥¤’¥á’¡¼’¥¸’¤Ë’¥¿’¥°’¤ò’ÉÕ’¤±’¤ë(gcr ’¤Ø’¤Îpush ’½à’È÷’¡Ë
+docker tag my-web-server gcr.io/$PROJECT/my-web-server
+
+gcr ’¤Ëpush
+gcloud docker -- push gcr.io/$PROJECT/my-web-server
+
+cloud build’¤ò’¤Ä’¤«’¤Ã’¤Æ’°ì’µ¤’¤Ë gcr ’¤Ë push
+
+’Æ°’²è’¤Ç’¤Ï
+gcloud container builds submit -t gcr.io/$PROJECT/my-cb-web-server .
+’¤È’¤·’¤Æ’¤¤’¤¿’¤¬’¡¢’¤³’¤ì’¤Ç’¤Ï’¥¨’¥é’¡¼’¤Ç
+gcloud builds submit -t gcr.io/$PROJECT/my-cb-web-server .
+’¤Ç’¤Ç’¤­’¤¿’¡£
+
+gke ’¥¯’¥é’¥¹’¥¿’¡¼’¤ò’ºî’¤Ã’¤Æ’¥¯’¥é’¥¹’¥¿’¡¼’¤Ë’ÀÜ’Â³
+gcloud container clusters get-credentials demo-cluster --zone us-central1-a --project $PROJECT
+’¥Ç’¥×’¥í’¥¤’¥á’¥ó’¥È
+kubectl run my-web-sever-gke --image=gcr.io/$PROJECT/my-web-server --port=8080’¡¡(run ’¤Î’¸å’¤Î’Ì¾’Á°’¤Ï’¤Ê’¤ó’¤Ç’¤âOK’¡Ë
+’¢ª’¤³’¤ì’¤¸’¤ã’¤À’¤á. not deployment ’¤È’¸À’¤ï’¤ì’¤ë
+
+kubectl create deployment my-web-server-gke --image=gcr.io/${PROJECT_ID}/my-web-server --port=8080
+
+’¤Ç’¤¤’¤±’¤ë’¤Ã’¤Ý’¤¤
+
+LoadBalancer’¤Ç’³°’Éô’¤Ë’¸ø’³«(80’¤Ç’ÂÔ’¤Á’¼õ’¤±’¤Æ’¡¢8080’¥Ý’¡¼’¥È’¤Ë’Å¾’Á÷’¡Ë
+kubectl expose deployment my-web-server-gke --type=LoadBalancer --port=80 --target-port=8080
+
+’¥³’¥Þ’¥ó’¥É’¥é’¥¤’¥ó’¤Ç’¥¹’¥±’¡¼’¥ë
+kubectl scale deployment my-web-server-gke --replicas=3
+
+kubectl edit deployment ’¤Ç’¡¡yml’¥Õ’¥¡’¥¤’¥ë’¤ò’É½’¼¨’¡¢replicas:’¤Î’¿ô’»ú’¤ò’ÊÑ’¹¹’¤¹’¤ë’¤Ç’¤â’¤è’¤¤’¡£
+’¤â’¤Á’¤í’¤óGCP’¥³’¥ó’¥½’¡¼’¥ë’¤«’¤é’¤Ç’¤â’²Ä’Ç½
+’²¼’µ­’¤Î’¥³’¥Þ’¥ó’¥É’¤ò’»È’¤¤’¤Þ’¤·’¤¿’¡£
+
+   28  gcloud docker -- push gcr.io/$PROJECT/my-web-server
+   29  gcloud container builds submit -t gcr.io/$PROJECT/my-web-server .
+   30  gcloud builds submit -t gcr.io/$PROJECT/my-cb-web-server .
+   31  export PROJECT=$(gcloud info --format='value(config.project)')
+   32  echo $PROJECT
+   33  docker images
+   34  cluster images
+   35  docker images
+   36  docker build -t my-web-server .
+   37  docker images
+   38  gcloud container clusters get-credentials demo-cluster --zone us-central1-a --project $PROJECT
+   39  kubectl get nodes
+   40  kubectl get services
+   41  kubectl create deployment my-web-server-gke --image=gcr.io/$PROJECT/my-web-server --port=8080
+   42  kubectl get pods
+   43  kubectl get deployments
+   44  kubectl expose deployment my-web-server-gke --type=LoadBalancer --port=80 --target-port=8080
+   45  kubectl get pods
+   46  kubectl get services
+   47  kubectl get pods
+   48  kubectl scale deployment my-web-server-gke --replicas=3
+   49  kubectl get pods
+   50  kubectl get pods -o wide
+   51  kubectl get pods
+   52  history
+   53  gcoud builds submit -t gcr.io/$PROJECT/my-web-server-2 .
+   54  gcloud builds submit -t gcr.io/$PROJECT/my-web-server-2 .
+   55  docker images
+   56  history
+   57  kubectl edit deployment
+   58  kubectl get pods
+   59  kubectl get pods -o wide
+   60  kubectl edit deployment
+   61  kubectl get pods -o wide
+
+
+
+

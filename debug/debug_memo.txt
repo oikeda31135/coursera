@@ -1,0 +1,20 @@
+復習
+
+App Engine フレキシブル環境と Container Engine に関する以下の説明のうち、正しいものはどれですか。
+
+App Engine フレキシブル環境と Container Engine は、両方とも Docker コンテナを使用する。
+App Engine と Container Engine を明示的にプロビジョニングするには、両方ともロードバランサが必要である。
+App Engine と Container Engine は、両方とも appspot.com ドメイン経由でトラフィックを処理する。
+App Engine でトラフィック分割を行うために使用できるメカニズムはどれですか。
+
+IP アドレス
+Cookie
+ランダム
+認証済みユーザー
+上記のいずれでもない。App Engine では実現できない。
+
+
+
+アプリ開発: アプリケーション エラーのデバッグ v1.1
+
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst

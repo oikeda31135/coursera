@@ -1,0 +1,4 @@
+FROM gcr.io/google_appengine/node.js
+COPY app.js /app/
+RUN echo "This runs during the build process..."
+CMD node app.js

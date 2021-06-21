@@ -1,0 +1,9 @@
+■Mon Jun 21 17:57:19 +0900 2021  usr01265 Wrote.
+(1)アプリケーション開発のベスト プラクティスに関する理解度チェック
+https://www.coursera.org/learn/getting-started-app-development-jp/exam/uwMMR/apurikesiyonkai-fa-nobesuto-purakuteisuniguan-suruli-jie-du-tietuku
+
+(2)Google Cloud クライアント ライブラリ、Google Cloud SDK、Google Firebase SDK に関する理解度チェック
+https://www.coursera.org/learn/getting-started-app-development-jp/exam/izIzU/google-cloud-kuraianto-raiburari-google-cloud-sdk-google-firebase-sdk-niguan
+
+(3)データ ストレージ オプションに関する理解度チェック
+https://www.coursera.org/learn/getting-started-app-development-jp/exam/8tWdv/deta-sutorezi-opusiyonniguan-suruli-jie-du-tietuku

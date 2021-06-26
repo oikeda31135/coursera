@@ -1,9 +1,15 @@
-¡Mon Jun 21 17:57:19 +0900 2021  usr01265 Wrote.
-(1)ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ŠJ”­‚ÌƒxƒXƒg ƒvƒ‰ƒNƒeƒBƒX‚ÉŠÖ‚·‚é—‰ğ“xƒ`ƒFƒbƒN
+â– Mon Jun 21 17:57:19 +0900 2021  usr01265 Wrote.
+(1)ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³é–‹ç™ºã®ãƒ™ã‚¹ãƒˆ ãƒ—ãƒ©ã‚¯ãƒ†ã‚£ã‚¹ã«é–¢ã™ã‚‹ç†è§£åº¦ãƒã‚§ãƒƒã‚¯
 https://www.coursera.org/learn/getting-started-app-development-jp/exam/uwMMR/apurikesiyonkai-fa-nobesuto-purakuteisuniguan-suruli-jie-du-tietuku
 
-(2)Google Cloud ƒNƒ‰ƒCƒAƒ“ƒg ƒ‰ƒCƒuƒ‰ƒŠAGoogle Cloud SDKAGoogle Firebase SDK ‚ÉŠÖ‚·‚é—‰ğ“xƒ`ƒFƒbƒN
+(2)Google Cloud ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆ ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã€Google Cloud SDKã€Google Firebase SDK ã«é–¢ã™ã‚‹ç†è§£åº¦ãƒã‚§ãƒƒã‚¯
 https://www.coursera.org/learn/getting-started-app-development-jp/exam/izIzU/google-cloud-kuraianto-raiburari-google-cloud-sdk-google-firebase-sdk-niguan
 
-(3)ƒf[ƒ^ ƒXƒgƒŒ[ƒW ƒIƒvƒVƒ‡ƒ“‚ÉŠÖ‚·‚é—‰ğ“xƒ`ƒFƒbƒN
+(3)ãƒ‡ãƒ¼ã‚¿ ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã«é–¢ã™ã‚‹ç†è§£åº¦ãƒã‚§ãƒƒã‚¯
 https://www.coursera.org/learn/getting-started-app-development-jp/exam/8tWdv/deta-sutorezi-opusiyonniguan-suruli-jie-du-tietuku
+
+(4)Cloud Datastore ã®ä½¿ç”¨ã«é–¢ã™ã‚‹ç†è§£åº¦ãƒã‚§ãƒƒã‚¯
+https://www.coursera.org/learn/getting-started-app-development-jp/exam/rl0wl/cloud-datastore-noshi-yong-niguan-suruli-jie-du-tietuku
+
+(5)Cloud Storage ã®ä½¿ç”¨ã«é–¢ã™ã‚‹ç†è§£åº¦ãƒã‚§ãƒƒã‚¯
+https://www.coursera.org/learn/getting-started-app-development-jp/exam/mUsSY/cloud-storage-noshi-yong-niguan-suruli-jie-du-tietuku

@@ -19,3 +19,8 @@ StatefulSet に関するレッスンを復習してください。
 
 イメージ リポジトリの認証情報を渡して、Kubelet が Pod に代わって非公開イメージを pull できるようにするには、どのタイプの Kubernetes Secret を使用すればよいでしょうか。
 Kubernetes Secret に関するレッスンを復習してください。
+
+
+Reliable Cloud Infrastructure: Design and Process（練習問題「Google Cloud へのアプリケーションのデプロイ」）
+terraformスクリプトって何？
+Istioって何?

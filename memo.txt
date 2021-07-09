@@ -3,6 +3,7 @@
 ・練習問題通し
 Getting Started with Application Development(6/30)
 Architecting with Google Kubernetes Engine: Workloads(7/1)
+Elastic Cloud Infrastructure: Scaling and Automation(7/4)
 
 
 アプリケーション オーナーが、PersistentVolumeClaim を使用して Pod マニフェストを作成しました。StorageClassName の値は standard です。GKE クラスタでこのボリュームに対して使用されるストレージ タイプは次のうちどれですか。
@@ -24,3 +25,4 @@ Kubernetes Secret に関するレッスンを復習してください。
 Reliable Cloud Infrastructure: Design and Process（練習問題「Google Cloud へのアプリケーションのデプロイ」）
 terraformスクリプトって何？
 Istioって何?
+

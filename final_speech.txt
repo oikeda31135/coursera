@@ -1,0 +1,28 @@
+・ロギングとモニタリングの違い
+
+・練習問題通し
+Getting Started with Application Development(6/30)
+Architecting with Google Kubernetes Engine: Workloads(7/1)
+Elastic Cloud Infrastructure: Scaling and Automation(7/4)
+
+
+アプリケーション オーナーが、PersistentVolumeClaim を使用して Pod マニフェストを作成しました。StorageClassName の値は standard です。GKE クラスタでこのボリュームに対して使用されるストレージ タイプは次のうちどれですか。
+Kubernetes Volume に関するレッスンを復習してください。
+
+
+作成した ConfigMap のデータをアプリケーションで使えるようにしています。このデータをファイルとしてアプリケーションで使えるようにするには、Pod マニフェストのどこでディレクトリ パスのパラメータを構成すればよいでしょうか。
+ConfigMap に関するレッスンを復習してください。
+
+
+Demo-0、Demo-1、Demo-2、Demo-3 という 4 つの Pod で構成された StatefulSet があります。元はレプリカ Pod が 2 つしかありませんでしたが、最近 4 つに増やされました。現在、updateStrategy タイプとして RollingUpdate を使用して更新がロールアウトされています。この StatefulSet で最後に更新されるのはどの Pod ですか。
+StatefulSet に関するレッスンを復習してください。
+
+
+イメージ リポジトリの認証情報を渡して、Kubelet が Pod に代わって非公開イメージを pull できるようにするには、どのタイプの Kubernetes Secret を使用すればよいでしょうか。
+Kubernetes Secret に関するレッスンを復習してください。
+
+
+Reliable Cloud Infrastructure: Design and Process（練習問題「Google Cloud へのアプリケーションのデプロイ」）
+terraformスクリプトって何？
+Istioって何?
+
